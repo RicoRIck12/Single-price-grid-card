@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --grayishblue: hsl(218, 22%, 67%);
+    --lighgray: hsl(204, 43%, 93%);
+    --cyan:  hsl(179, 62%, 43%);
+    --brightyellow: hsl(71, 73%, 54%);
+    --item3: #4abebd; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--lighgray);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    max-width: 635px;
+    margin: 1em;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 0px 14px 1px var(--grayishblue);
+}
+
+.item {
+    padding: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.item1 {
+    background-color: #fff;
+}
+.item1 h2 {
+    color: var(--cyan);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.item1 h3 {
+    color: var(--brightyellow);
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+.item1 p {
+    color: var(--grayishblue);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.item2 {
+    background-color: var(--cyan);
+}
+.item2 h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.item2-paragraph1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.item2-paragraph1 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lighgray);
+}
+.item2-paragraph2 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.item2 button {
+    background-color: var(--brightyellow);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    padding: .8em;
+    border-radius: 6px;
+}
+
+.item3 {
+    background-color: var(--item3);
+}
+.item3 h2 {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.item3 ul {
+    list-style-type: none;
+}
+.item3 ul li {
+    color: var(--lighgray);
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+footer {
+    margin: 1em;
+    padding-top: .5em;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (min-width: 900px) {
+    .item {
+        padding: 35px;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .item1 {
+        grid-area: 1/1/2/3;
+    }
+
+    .item2-paragraph1 {
+        margin-top: 15px;
+    }
+
+    .item2 button {
+        margin-top: 20px;
+    }
+
+
+}
